@@ -75,7 +75,7 @@ export default function Meeting() {
               <EuiBadge color="success">
                 <Link
                   style={{ color: "black" }}
-                  to={`/join${meeting.meetingId}/`}
+                  to={`/join/${meeting.meetingId}`}
                 >
                   Join Now
                 </Link>

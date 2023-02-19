@@ -5,6 +5,7 @@ import useAuth from "../../hooks/useAuth";
 import meeting1 from "../../assets/meeting1.png";
 import meeting2 from "../../assets/meeting2.png";
 import { useNavigate } from "react-router-dom";
+import "./style.css";
 
 function CreateMeeting() {
   useAuth();
@@ -17,12 +18,14 @@ function CreateMeeting() {
         height: "100vh",
         flexDirection: "column",
       }}
+      className="dashboard"
     >
       <Header></Header>
       <EuiFlexGroup
         justifyContent="center"
         alignItems="center"
         style={{ margin: "5vh 10vw" }}
+        className="custom-dashboard--group"
       >
         <EuiFlexItem>
           <EuiCard

@@ -71,7 +71,7 @@ function App() {
             <Route path="/videoconference" element={<VideoConference />} />
             <Route path="/mymeetings" element={<MyMeetings />} />
             <Route path="/meetings" element={<Meeting />} />
-            <Route path="/join:/id" element={<JoinMeeting />} />
+            <Route path="/join/:id" element={<JoinMeeting />} />
             <Route path="/" element={<Dashboard></Dashboard>} />
             <Route path="*" element={<Dashboard></Dashboard>} />
           </Routes>

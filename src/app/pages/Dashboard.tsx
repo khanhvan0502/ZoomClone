@@ -7,6 +7,8 @@ import dashboard2 from "../../assets/dashboard2.png";
 import dashboard3 from "../../assets/dashboard3.png";
 import Header from "../../components/Header";
 
+import "./style.css";
+
 function Dashboard() {
   useAuth();
   const navigate = useNavigate();
@@ -19,12 +21,14 @@ function Dashboard() {
           height: "100vh",
           flexDirection: "column",
         }}
+        className="dashboard"
       >
         <Header />
         <EuiFlexGroup
           justifyContent="center"
           alignItems="center"
           style={{ margin: "5vh 10vw" }}
+          className="custom-dashboard--group"
         >
           <EuiFlexItem>
             <EuiCard
@@ -37,7 +41,7 @@ function Dashboard() {
           </EuiFlexItem>
           <EuiFlexItem>
             <EuiCard
-              icon={<EuiImage size="100%" alt="icon" src={dashboard2} />}
+              icon={<EuiImage size="5rem" alt="icon" src={dashboard2} />}
               title={"My Meetings"}
               description="View your create meeting."
               onClick={() => navigate("/mymeetings")}

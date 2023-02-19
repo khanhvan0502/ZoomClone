@@ -1,0 +1,6 @@
+.dashboard
+  .custom-dashboard--group
+  .euiPanel.euiPanel--plain.euiCard:hover
+  button {
+  text-decoration: none !important;
+}
